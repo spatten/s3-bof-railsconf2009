@@ -1,0 +1,18 @@
+>> Bucket.create('spatten-railsconf')
+>> S3Object.store('vampire.jpg', File.open('vampire.jpg'), 'spatten-railsconf')
+Puts the contents of the file in vampire.jpg in spatten-railsconf/vampire.jpg
+Try opening it in a browser.  Sorry, can't!
+>> S3Object.store('public-vampire.jpg', File.open('vampire.jpg'), 'spatten-railsconf', :access => :public_read)
+Go to:
+http://s3.amazonaws.com/spatten-railsconf/public-vampire.jpg
+http://spatten-railsconf.s3.amazonaws.com/public-vampire.jpg
+
+
+URLs
+
+>> b = Bucket.find('spatten-railsconf')
+>> vamp = b['vampire.jpg']
+>> vamp.url
+=> "http://s3.amazonaws.com/spatten-railsconf/vampire.jpg?AWSAccessKeyId=195MGYF7J3AC7ZPSHVR2&Expires=1241562219&Signature=Lzv3hXlFlakcwyVEIwZrUN5jL7c%3D"
+>> require 'action_view'
+>> vamp.url(:expires_in => 5.days)
