@@ -1,0 +1,35 @@
+h1. Things to cover
+
+h2. Intro to S3
+
+* why/philosophy
+* architecture
+* RESTful interface
+** Service, Buckets, Objects, ACLs.  GET, PUT, DELETE, HEAD.  Note: no post.
+
+h2. Getting set up
+
+* Sign up
+* installing AWS/S3 gem.  Setting ENV variables.
+* irb/s3sh
+* Demo of putting an object to S3
+
+h2. Use cases
+
+* asset host
+* backup
+* authenticated URLs -- Sopobo
+
+
+h2. Backup
+
+* mysql
+* code => just use GitHub
+* static assets
+** Paperclip and S3
+
+h2. Best practices
+
+* don't put s3.yml in git.
+* Cap task to put it up there
+
