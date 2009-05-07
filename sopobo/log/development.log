@@ -55,3 +55,31 @@ Processing BooksController#index (for 127.0.0.1 at 2009-05-05 14:52:09) [GET]
 Rendering template within layouts/books
 Rendering books/index
 Completed in 12ms (View: 7, DB: 1) | 200 OK [http://localhost/books]
+
+
+Processing BooksController#index (for 127.0.0.1 at 2009-05-06 18:32:45) [GET]
+  [4;36;1mBook Load (0.5ms)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 32ms (View: 27, DB: 1) | 200 OK [http://localhost/books]
+
+
+Processing BooksController#index (for 127.0.0.1 at 2009-05-06 18:33:07) [GET]
+  [4;36;1mBook Load (0.6ms)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/books]
+
+
+Processing BooksController#index (for 127.0.0.1 at 2009-05-06 18:56:20) [GET]
+  [4;36;1mBook Load (0.5ms)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/books]
+
+
+Processing BooksController#index (for 127.0.0.1 at 2009-05-06 18:57:45) [GET]
+  [4;36;1mBook Load (0.5ms)[0m   [0;1mSELECT * FROM "books" [0m
+Rendering template within layouts/books
+Rendering books/index
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://localhost/books]
